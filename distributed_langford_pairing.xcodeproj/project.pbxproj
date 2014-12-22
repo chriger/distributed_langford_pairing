@@ -8,23 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		9F091A6D1A48190300FD588F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F091A6C1A48190300FD588F /* main.cpp */; };
+		9F091A741A481AE700FD588F /* libtbb.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F091A731A481AE700FD588F /* libtbb.dylib */; };
+		9F091A761A481B0D00FD588F /* libmpi_cxx.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F091A751A481B0D00FD588F /* libmpi_cxx.1.dylib */; };
+		9F091A781A481B3000FD588F /* libmpi.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F091A771A481B3000FD588F /* libmpi.1.dylib */; };
+		9F091A791A481B5200FD588F /* libtbb.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F091A731A481AE700FD588F /* libtbb.dylib */; };
+		9F091A7A1A481B5700FD588F /* libmpi_cxx.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F091A751A481B0D00FD588F /* libmpi_cxx.1.dylib */; };
+		9F091A7B1A481B5B00FD588F /* libmpi.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9F091A771A481B3000FD588F /* libmpi.1.dylib */; };
+		9F091A7D1A481BEC00FD588F /* langford_solver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F091A7C1A481BEC00FD588F /* langford_solver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9F091A671A48190300FD588F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				9F091A7B1A481B5B00FD588F /* libmpi.1.dylib in CopyFiles */,
+				9F091A7A1A481B5700FD588F /* libmpi_cxx.1.dylib in CopyFiles */,
+				9F091A791A481B5200FD588F /* libtbb.dylib in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9F091A691A48190300FD588F /* distributed_langford_pairing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = distributed_langford_pairing; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F091A6C1A48190300FD588F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9F091A731A481AE700FD588F /* libtbb.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtbb.dylib; path = tbb43_20140724oss/lib/libtbb.dylib; sourceTree = "<group>"; };
+		9F091A751A481B0D00FD588F /* libmpi_cxx.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpi_cxx.1.dylib; path = "../../../../usr/local/Cellar/open-mpi/1.8.3/lib/libmpi_cxx.1.dylib"; sourceTree = "<group>"; };
+		9F091A771A481B3000FD588F /* libmpi.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmpi.1.dylib; path = "../../../../usr/local/Cellar/open-mpi/1.8.3/lib/libmpi.1.dylib"; sourceTree = "<group>"; };
+		9F091A7C1A481BEC00FD588F /* langford_solver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = langford_solver.cpp; sourceTree = "<group>"; };
+		9F091A7E1A481BF700FD588F /* langford_solver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = langford_solver.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F091A781A481B3000FD588F /* libmpi.1.dylib in Frameworks */,
+				9F091A761A481B0D00FD588F /* libmpi_cxx.1.dylib in Frameworks */,
+				9F091A741A481AE700FD588F /* libtbb.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +59,9 @@
 		9F091A601A48190300FD588F = {
 			isa = PBXGroup;
 			children = (
+				9F091A771A481B3000FD588F /* libmpi.1.dylib */,
+				9F091A751A481B0D00FD588F /* libmpi_cxx.1.dylib */,
+				9F091A731A481AE700FD588F /* libtbb.dylib */,
 				9F091A6B1A48190300FD588F /* distributed_langford_pairing */,
 				9F091A6A1A48190300FD588F /* Products */,
 			);
@@ -58,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				9F091A6C1A48190300FD588F /* main.cpp */,
+				9F091A7E1A481BF700FD588F /* langford_solver.h */,
+				9F091A7C1A481BEC00FD588F /* langford_solver.cpp */,
 			);
 			path = distributed_langford_pairing;
 			sourceTree = "<group>";
@@ -119,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F091A6D1A48190300FD588F /* main.cpp in Sources */,
+				9F091A7D1A481BEC00FD588F /* langford_solver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,14 +226,26 @@
 		9F091A711A48190300FD588F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/tbb43_20140724oss/lib",
+					/usr/local/lib,
+					"/usr/local/Cellar/open-mpi/1.8.3/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/tbb43_20140724oss/include /usr/local/include";
 			};
 			name = Debug;
 		};
 		9F091A721A48190300FD588F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/tbb43_20140724oss/lib",
+					/usr/local/lib,
+					"/usr/local/Cellar/open-mpi/1.8.3/lib",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/tbb43_20140724oss/include /usr/local/include";
 			};
 			name = Release;
 		};
@@ -232,6 +268,7 @@
 				9F091A721A48190300FD588F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
